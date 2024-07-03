@@ -1,0 +1,79 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+    main {
+        width: 50%;
+        height: 100dvh;
+        font: 26px Arial, sans-serif;
+    }
+    .row {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 767px) {
+    main {
+        width: 100%;
+        min-height: 100dvh;
+        font: 5.5vmin Arial, sans-serif;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+p {
+    margin: 3dvh;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    
+    > * {
+        margin: 10px;
+    }
+}
+.cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    background-color: red;
+    color: white;
+    font: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+span.cancopy {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+} 
+span.copied{
+    color: blue;
+}
