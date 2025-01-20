@@ -12,13 +12,14 @@ main {
     flex-direction: column;
     justify-content:space-between;
     align-items:center;
-    overflow: hidden;
+    height: 100%;
 }
 @media only screen and (min-width: 768px) {
     main {
         width: 60%;
         min-height: 100dvh;
         font: 30px Arial, sans-serif;
+        line-height: 1.5;
     }
     .row {
         justify-content: space-between;
