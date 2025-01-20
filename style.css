@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 body {
     display: flex;
     justify-content: center;
@@ -14,9 +16,9 @@ main {
 }
 @media only screen and (min-width: 768px) {
     main {
-        width: 50%;
-        height: 100dvh;
-        font: 26px Arial, sans-serif;
+        width: 60%;
+        min-height: 100dvh;
+        font: 30px Arial, sans-serif;
     }
     .row {
         justify-content: space-between;
@@ -28,7 +30,8 @@ main {
     main {
         width: 100%;
         min-height: 100dvh;
-        font: 5.5vmin Arial, sans-serif;
+        font: 6.5vmin Arial, sans-serif;
+        line-height: 1.5;
     }
     .row {
         flex-direction: column;
@@ -73,7 +76,10 @@ span.cancopy {
     cursor: pointer;
     text-decoration: underline;
     transition: color 0.2s;
-} 
+}
 span.copied{
     color: blue;
+}
+p > span:first-of-type {
+    display: block;
 }
